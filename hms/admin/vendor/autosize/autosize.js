@@ -1,8 +1,3 @@
-/*!
-	Autosize 2.0.0
-	license: MIT
-	http://www.jacklmoore.com/autosize
-*/
 (function (root, factory) {
 	'use strict';
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2021 at 08:14 PM
+-- Generation Time: Jul 27, 2021 at 04:01 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -103,6 +103,13 @@ CREATE TABLE `doctorslog` (
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `doctorslog`
+--
+
+INSERT INTO `doctorslog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logout`, `status`) VALUES
+(28, 7, 'doctor@gmail.com', 0x3a3a3100000000000000000000000000, '2021-07-27 01:58:10', '27-07-2021 07:28:16 AM', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -201,6 +208,13 @@ CREATE TABLE `userlog` (
   `logout` varchar(255) DEFAULT NULL,
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userlog`
+--
+
+INSERT INTO `userlog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logout`, `status`) VALUES
+(28, 2, 'patient@gmail.com', 0x3a3a3100000000000000000000000000, '2021-07-27 01:58:34', '27-07-2021 07:28:38 AM', 1);
 
 -- --------------------------------------------------------
 
@@ -318,7 +332,7 @@ ALTER TABLE `doctors`
 -- AUTO_INCREMENT for table `doctorslog`
 --
 ALTER TABLE `doctorslog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `doctorspecilization`
@@ -348,7 +362,7 @@ ALTER TABLE `tblpatient`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `users`
